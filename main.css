@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
+
+*
+{
+    font-family: 'Do Hyeon', sans-serif;
+}
+
+body
+{
+    margin: 0;
+    overflow: hidden; /*자식 컨텐츠 숨김*/
+}
+
+.header
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    background-color: lightyellow;
+}
+
+.header ul
+{
+    margin: 0%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    cursor: pointer;
+    list-style: none;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 14px;
+    color: #7B744F;
+}
+
+.item section
+{
+    min-height: 100vh;
+    padding-top: 50px;
+}
+
+.home
+{
+    padding: 10%;
+}
+
+.aboutme, .skill
+{   
+    padding: 10%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.introduce-title
+{
+    font-size: 100px;
+    color: #7B744F;
+}
+
+.introduce
+{
+    margin: 100px;
+    align-items: center;
+}
+
+.introduce p
+{
+    margin-left: 10%;
+    font-size: 20px;
+    color: #7B744F;
+    float: left;
+}
+
+.profile
+{
+    margin-left: 20%;
+    width: 10%;
+    height: 30%;
+    float: right;
+    border-radius: 30%; /*둥글게 깎는 정도*/
+    overflow: hidden; /*깎고 넘치는 부분을 hidden으로 안 보이게*/
+}
+
+.profile-img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.aboutme p
+{
+    font-size: 20px;
+    color: #7B744F;
+}
+
+.aboutme img
+{
+    width: 50px;
+    height: 50px;
+}
+
+.skill p
+{
+    font-size: 50px;
+    color: #7B744F;
+}
+
+.skill img
+{
+    width: 40%;
+    height: 40%;
+}
