@@ -21,6 +21,8 @@ window.addEventListener("load", function()
           if(e.deltaY < 0) 	doScroll(++curSIdx);
           else doScroll(--curSIdx);
         }, 50);
+
+
     });
     
     function doScroll(sidx) 
