@@ -1,63 +1,103 @@
 <html>
+  <head>
+    <meta charest="UTF-8" />
+    <meta name="viewport" content="width=device-width, inital-scale=1.0" />
+    <link href="main.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-    <head>
+  <body>
+    <header class="header">
+      <ul>
+        <li>HOME</li>
+        <li>ABOUT</li>
+        <li>SKILL</li>
+        <li>CONTECT</li>
+      </ul>
+    </header>
 
-        <meta charest="UTF-8" />
-        <meta name="viewport" content="width=device-width, inital-scale=1.0" />
-        <link href="main.css" rel="stylesheet" type="text/css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+    <div class="item">
+      <section class="sec1">
+        <div class="home">
+          <div class="introduce-title">Introduce</div>
+          <div class="introduce">
+            <p>
+              안녕하세요! 자바 개발자를 목표로 하고 있는 박지선입니다.<br />
+              많은 전공 속에서 호기심을 갖고 희망했던 것이 바로 소프트웨어
+              개발이었습니다.<br />
+              부풀었던 상상과는 달리 어려움이 많았지만, 곧대로 빠르게
+              해결해나갔습니다.<br />
+              남들보다 뒤처치지 않고, 누구보다 재빠르게 파악하고 수용하는 자바
+              개발자가 되겠습니다.<br />
+            </p>
 
-    </head>
-
-    <body>
-        <header class="header">
-            <ul>
-                <li>HOME</li>
-                <li>ABOUT</li>
-                <li>CONTECT</li>
-            </ul>
-        </header>
-
-        <div class="item">
-            <section class="sec1">
-                <div class="home">
-                    <div class="introduce-title">Introduce</div>
-                    <div class="introduce">
-                            <p>
-                                안녕하세요! 남들보다 다소 느린 박지선입니다.<br>
-                                처음으로 웹 개발자라는 목표를 가지게 되었습니다.<br>
-                                느리게 시작했지만 뒤처치지 않고,<br>
-                                누구보다 재빠르게 파악하고 개발하는 웹 개발자가 되겠습니다.<br>
-                            </p>
-
-                            <div class="profile">
-                                <img class="profile-img" src="image/profile.jpg">
-                            </div>
-                    </div>
-                </div>       
-            </section>
-
-            <section class="sec2">
-                <div class="aboutme">
-                    <img src="image/user.png"><p>이름<br>박지선</p>
-                    <img src="image/birth.png"><p>생일<br>2000.11.08</p>
-                    <img src="image/school.png"><p>학력<br>강원대학교 소프트웨어미디어융합전공</p>
-                    <img src="image/map.png"><p>주소<br>서울특별시 도봉구</p>
-                </div>
-            </section>
-
-            <section class="sec3">
-                <div class="skill">
-                    <p>Skill</p>
-                    <img src="image/skill.png">
-                </div>
-            </section>
-        
+            <div class="profile">
+              <img class="profile-img" src="image/profile.jpg" />
+            </div>
+          </div>
         </div>
-    </body>
+      </section>
 
-    <script src="main.js"></script>
+      <section class="sec2">
+        <div class="aboutme">
+          <div class="about">
+            <img src="image/user.png" />
+            <p>이름<br />박지선</p>
+          </div>
+          <div class="about">
+            <img src="image/birth.png" />
+            <p>생일<br />2000.11.08</p>
+          </div>
+          <div class="about">
+            <img src="image/school.png" />
+            <p>학력<br />강원대학교 소프트웨어미디어융합전공</p>
+          </div>
+          <div class="about">
+            <img src="image/map.png" />
+            <p>주소<br />서울특별시 도봉구</p>
+          </div>
+        </div>
+      </section>
 
+      <section class="sec3">
+        <div class="skill">
+          <p>Skill</p>
+          <img src="image/skill.png" />
+          <img src="image/java.png" />
+          <img src="image/spring.png" />
+        </div>
+      </section>
+
+      <section class="sec4">
+        <div class="contect">
+          <p class="contect_title">Contect</p>
+          <p class="contect_email">Email seolmisae@gmail.com</p>
+          <form class="contect_form">
+            <input type="hidden" name="contact_number" />
+            <input
+              class="input_name"
+              type="text"
+              name="from_name"
+              placeholder="Name"
+            />
+            <input
+              class="input_email"
+              type="email"
+              name="user_email"
+              placeholder="Email"
+            />
+            <textarea name="message" placeholder="Message"></textarea>
+            <input type="submit" value="Send" class="submit" />
+          </form>
+        </div>
+      </section>
+    </div>
+  </body>
+
+  <script src="main.js"></script>
 </html>

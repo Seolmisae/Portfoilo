@@ -1,122 +1,146 @@
-@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap");
 
-*
-{
-    font-family: 'Do Hyeon', sans-serif;
+* {
+  font-family: "Do Hyeon", sans-serif;
 }
 
-
-body
-{
-    margin: 0;
-    height: 100vh;
-    overflow: hidden; /*자식 컨텐츠 숨김*/
+body {
+  margin: 0;
+  overflow: hidden; /*자식 컨텐츠 숨김*/
 }
 
-.header
-{
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 50px;
-    background-color: lightyellow;
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+  background-color: lightyellow;
 }
 
-.header ul
-{
-    margin: 0%;
-    height: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    cursor: pointer;
-    list-style: none;
-    text-decoration: none;
-    letter-spacing: 3px;
-    font-weight: bold;
-    font-size: 14px;
-    color: #7B744F;
+.header ul {
+  margin: 0%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  cursor: pointer;
+  list-style: none;
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-size: 14px;
+  color: #7b744f;
 }
 
-section
-{
-    min-height: 100vh;
-    padding-top: 100px;
-    box-sizing: border-box;
-    
+section {
+  min-height: 100vh;
+  padding-top: 50px;
+  box-sizing: border-box;
 }
 
-.home
-{
-    margin: 10%;
+.home,
+.contect {
+  margin: 10%;
 }
 
-.aboutme, .skill
-{   
-    margin: 10%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+.aboutme,
+.skill {
+  margin: 10%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
-.introduce-title
-{
-    font-size: 100px;
-    color: #7B744F;
+.introduce-title {
+  font-size: 100px;
+  color: #7b744f;
 }
 
-.introduce
-{
-    margin: 100px;
-    align-items: center;
+.introduce p {
+  margin-left: 10%;
+  font-size: 20px;
+  color: #7b744f;
+  float: left;
 }
 
-.introduce p
-{
-    margin-left: 10%;
-    font-size: 20px;
-    color: #7B744F;
-    float: left;
+.profile {
+  width: 10%;
+  height: 30%;
+  float: right;
+  border-radius: 30%; /*둥글게 깎는 정도*/
+  overflow: hidden; /*깎고 넘치는 부분을 hidden으로 안 보이게*/
 }
 
-.profile
-{
-    margin-left: 20%;
-    width: 10%;
-    height: 30%;
-    float: right;
-    border-radius: 30%; /*둥글게 깎는 정도*/
-    overflow: hidden; /*깎고 넘치는 부분을 hidden으로 안 보이게*/
+.profile-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-.profile-img
-{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.aboutme p {
+  font-size: 20px;
+  color: #7b744f;
 }
 
-.aboutme p
-{
-    font-size: 20px;
-    color: #7B744F;
+.aboutme img {
+  width: 50px;
+  height: 50px;
 }
 
-.aboutme img
-{
-    width: 50px;
-    height: 50px;
+.skill p {
+  font-size: 50px;
+  color: #7b744f;
 }
 
-.skill p
-{
-    font-size: 50px;
-    color: #7B744F;
+.skill img {
+  width: 30%;
+  height: 30%;
 }
 
-.skill img
-{
-    width: 40%;
-    height: 40%;
+.contect_title {
+  text-align: center;
+  font-size: 50px;
+  color: #7b744f;
+}
+
+.contect_email {
+  text-align: center;
+  font-size: 20px;
+  color: #7b744f;
+}
+
+.contect_form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.contect_form textarea,
+.input_name,
+.input_email {
+  margin: 10px;
+  width: 300px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 3px solid #7b744f;
+}
+
+.contect_form textarea {
+  height: 100px;
+}
+
+.input_name,
+.input_email {
+  height: 50px;
+}
+
+.submit {
+  width: 300px;
+  background-color: #7b744f;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
 }
